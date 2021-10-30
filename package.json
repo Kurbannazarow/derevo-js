@@ -1,0 +1,32 @@
+{
+  "name": "derevojs",
+  "version": "1.0.0",
+  "description": "I code on JS",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kurbannazarow/derevo-js.git"
+  },
+  "keywords": [
+    "js",
+    "webpack",
+    "excel",
+    "javascript"
+  ],
+  "author": "Eziz Kurbannazarow <eziz_kurbannazarow@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kurbannazarow/derevo-js/issues"
+  },
+  "homepage": "https://github.com/Kurbannazarow/derevo-js#readme",
+  "private": "true",
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
