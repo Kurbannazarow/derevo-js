@@ -1,1 +1,0 @@
-console.log('I am a module js, and i am neighbover with index js))))')

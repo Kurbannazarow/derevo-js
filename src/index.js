@@ -1,5 +1,12 @@
-import './module'
+import './scss/index.scss'
 
 (()=>{
-  console.log("Index.js from folder src is working... uraaaaaaaa! func is working too))")
+  console.log('Index.js faaing too))')
+  // console.log(process.env.NODE_ENV)
 })()
+
+async function func() {
+  return await Promise.resolve('params working')
+}
+
+func().then(console.log)
