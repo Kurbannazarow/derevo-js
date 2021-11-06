@@ -1,0 +1,93 @@
+@import 'variables';
+@import 'mixins';
+
+.db {
+
+  &__header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: $db-header-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 5px 2px rgba(60, 64, 67, .15);z-index: 1000;
+  }
+
+  &__new {
+    margin-top: $db-header-height;
+    padding: 1.5rem;
+    background: #dadce0;
+
+    
+  }
+
+  &__view {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .db__create {
+      width: 160px;
+      height: 160px;
+      background: #fff;
+      border-radius: 4px;
+      border: 1px solid #dadce0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 1.15rem;
+      color: #002;
+      text-align: center;
+
+      &:hover {
+        color: green;
+        cursor: pointer;
+        border-color: green;
+      }
+    }
+  }
+
+  &__table {
+    padding: 1rem;
+    .db__list-header {
+      display: flex;
+      justify-content: space-between;
+      color: #202124;
+      font-weight: 900;
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding: 0 12px;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  &__list {
+    @include clear-list;
+  }
+
+  &__record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 12px 14px 12px 10px;
+    border-bottom: 1px solid $border-color;
+    &:hover{
+      background: #e6e4ea;
+      border-radius: 25px;
+    }
+    a {
+      text-decoration: none;
+      color: #202124;
+      font-size: 16px;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
